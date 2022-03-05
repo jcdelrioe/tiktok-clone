@@ -1,9 +1,12 @@
 import "./App.css";
+import FeedVideos from "./components/FeedVideos";
 
 function App() {
 	return (
 		<div className="App">
-			<main>Tiktok clone</main>
+			<main>
+				<FeedVideos />
+			</main>
 		</div>
 	);
 }
