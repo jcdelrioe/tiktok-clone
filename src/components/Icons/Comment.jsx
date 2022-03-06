@@ -1,8 +1,8 @@
 export const Comment = ({ fill = "currentColor" }) => {
 	return (
 		<svg
-			width="56"
-			height="56"
+			width="45"
+			height="45"
 			viewBox="0 0 20 20"
 			fill={fill}
 			xmlns="http://www.w3.org/2000/svg"
