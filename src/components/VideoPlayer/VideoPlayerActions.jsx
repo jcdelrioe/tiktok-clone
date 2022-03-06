@@ -9,20 +9,29 @@ export default function VideoPlayerActions({
 	shares = 12,
 	hearted = false,
 }) {
+	const handleLike = () => {
+		alert("like");
+	};
+	const handleComment = () => {
+		alert("Comment");
+	};
+	const handleShare = () => {
+		alert("Share");
+	};
 	return (
 		<aside className={styles.actions}>
-			<div className={styles.action}>
+			<button onClick={handleLike} className={styles.action}>
 				<Heart />
-				<strong title="like">{likes}</strong>
-			</div>
-			<div className={styles.action}>
+				<span title="like">{likes}</span>
+			</button>
+			<button onClick={handleComment} className={styles.action}>
 				<Comment />
-				<strong title="comments">{comments}</strong>
-			</div>
-			<div className={styles.action}>
+				<span title="comments">{comments}</span>
+			</button>
+			<button onClick={handleShare} className={styles.action}>
 				<Shares />
-				<strong title="share">{shares}</strong>
-			</div>
+				<span title="share">{shares}</span>
+			</button>
 		</aside>
 	);
 }
